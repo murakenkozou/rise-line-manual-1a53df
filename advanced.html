@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 検索エンジンに載せない（講座生限定配布用。一般公開したい場合はこの行を削除） -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- セキュリティ設定（外部スクリプト等を遮断。基本このまま） -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; frame-src https://www.loom.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>公式LINE 実践マニュアル（発展編）｜RISE夏合宿アーカイブ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== ヒーロー ===== -->
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">夏合宿アーカイブ</p>
+        <h1>公式LINE 実践マニュアル<br />発展編</h1>
+        <p class="subtitle">特典配布の先へ。ステップ配信から個別相談の予約まで、商品につながる導線を作ります。</p>
+        <p class="author">マニュアル制作：RISE事務局</p>
+      </div>
+    </header>
+
+    <!-- ===== 目次 ===== -->
+    <nav class="toc" aria-label="目次">
+      <div class="toc-inner">
+        <span class="toc-title">目次</span>
+        <a href="#about">前提</a>
+        <a href="#action">アクションとは</a>
+        <a href="#astep1">STEP1 中級</a>
+        <a href="#astep2">STEP2 上級</a>
+        <a href="#astep3">STEP3 上級</a>
+        <a href="#astep4">STEP4 収益化</a>
+        <a href="#astep5">STEP5 収益化</a>
+        <a href="#astep6">STEP6 改善</a>
+        <a href="#astep7">STEP7 番外編</a>
+        <a href="#exit">おわりに</a>
+        <a href="glossary.html">📖 用語集</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <!-- ===== 前提 ===== -->
+      <section id="about" class="block">
+        <h2>📌 このページの前提と対象者</h2>
+        <p>このページは<strong>基礎編のゴール（LINE登録で挨拶メッセージ＋特典が自動で届く）を達成した方</strong>向けです。まだの方は、先に基礎編を終わらせてください。</p>
+        <p><a class="btn-link" href="index.html">← 基礎編マニュアルに戻る</a></p>
+        <p>発展編の対象者はこんな方です。</p>
+        <ul class="menu">
+          <li>アフィリエイト商品や自分の商品・サービスがあり、LINEから販売につなげたい方</li>
+          <li>占い鑑定・カウンセリングなどの個別サービスに申し込んでもらいたい方（流れは同じです）</li>
+          <li>商品はこれからだが、導線を先に設計しておきたい方</li>
+        </ul>
+        <p>進む順は<strong>【中級】→【上級】→【収益化】→【改善】</strong>です。全部やる必要はありません。<strong>STEP1だけでも、特典の受け取り率と反応は大きく変わります。</strong>そして、<strong>大きく成果を出したい方は【収益化】（STEP4〜5）まで</strong>進んでください——個別相談の予約が自動で入る状態までがワンセットです。</p>
+        <div class="callout info">
+          <p><strong>文章づくりのAIは、どれを使ってもOKです。</strong>講座動画「AIライティングのやり方」はClaudeのプロジェクト機能で作っていますが、入っているノウハウはファネルキットと同じもの。Claude Codeでも、Claudeでも、普段使っているAIにキットを入れてもOK。おすすめは、Day1の分身AIとつなげてClaude Codeで全部管理するやり方です（知識が溜まって、使うほど充実します）。</p>
+          <p><a class="btn-link" href="https://utage-system.com/members/zT66X07UciKh/course/IW6wPLM8NbPg/lesson/7RqHCBP4jcJ7" target="_blank" rel="noopener noreferrer">▶ 講座動画「AIライティングのやり方」を見る（会員サイト）</a></p>
+        </div>
+      </section>
+
+      <!-- ===== アクション管理 ===== -->
+      <section id="action" class="block">
+        <h2>🔧 先にこれだけ — 「アクション」が分かれば全部同じ</h2>
+        <p>基礎編のSTEP6で、「友だち追加されたら、このテンプレートを送る」という設定をしました。エルメッセージではこれを<strong>アクション</strong>と呼びます。</p>
+        <p>実は、エルメの機能はほぼ全部これです。<strong>「◯◯したら△△する」の組み合わせ。</strong></p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>◯◯したら</th><th>△△する</th><th>出てくる場所</th></tr></thead>
+            <tbody>
+              <tr><td>友だち追加されたら</td><td>挨拶メッセージを送る</td><td>基礎編STEP6（済み）</td></tr>
+              <tr><td>特典URLがタップされたら</td><td>タグを付ける・ステップ配信を止める</td><td>このページのSTEP1</td></tr>
+              <tr><td>このQRコードから登録されたら</td><td>経路のタグを付けて専用の特典を送る</td><td>STEP2</td></tr>
+              <tr><td>シナリオの目的を達成したら</td><td>次のシナリオを自動で始める</td><td>STEP4</td></tr>
+              <tr><td>個別相談が予約されたら</td><td>リマインドを送る・配信を止める</td><td>STEP5</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>この1パターンさえ頭に入れば、発展編は「どこに・どのアクションを付けるか」を選んでいくだけです。</p>
+        <div class="callout info">
+          <p>タグ・回答フォーム・テンプレート・ステップ配信・流入経路の<strong>具体的な操作方法</strong>は、セールスファネル講座の実装ガイドで画面つきで解説されています。このページでは「何を・どの順で作るか」に絞り、細かい操作はそちらに任せます。</p>
+          <p><a class="btn-link" href="https://utage-system.com/members/zT66X07UciKh/course/IW6wPLM8NbPg/lesson/aIqvTYijeAed" target="_blank" rel="noopener noreferrer">▶ 講座動画「エルメッセージ実装ガイド」を見る（会員サイト）</a></p>
+        </div>
+      </section>
+
+      <!-- ===== STEP1 中級（最初にやる） ===== -->
+      <section id="astep1" class="block highlight">
+        <span class="badge">★ まずはここから</span>
+        <h2>STEP 1【中級】挨拶メッセージの後に、自動でステップ配信を流す</h2>
+        <p>このステップが終わると、登録した人に「1通目（登録直後）→ 2通目（12時間後）→ 3通目（23時間後）」が自動で流れ、<strong>特典を受け取っていない人にだけ</strong>リマインドが届くようになります。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/98c8bd9a03164540832746af63f18927" title="実演動画: ステップ配信を組む" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: ステップ配信を組む</figcaption>
+        </figure>
+        <h3>1. 2通目・3通目の文章を作る</h3>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>Claude Codeに送る</span>
+            <button type="button" class="copy-btn" data-target="q-adv1">コピー</button>
+          </div>
+          <pre id="q-adv1">特典配布シナリオの2通目と3通目を作ってください。
+・2通目: 登録から12時間後。まだ特典を受け取っていない人向けに、特典の中身をチラ見せして気にさせる内容
+・3通目: 登録から23時間後。「受け取りは残り1時間で終了」と伝える終了案内
+・受け取り期限は24時間限定という前提です</pre>
+        </div>
+        <h3>2. テンプレートを2つ追加する</h3>
+        <p>基礎編STEP6と同じ手順で、「2通目」「3通目」のテンプレートを作ります（新規作成 → 本文貼り付け → 保存）。</p>
+        <h3>3. ステップ配信を組む</h3>
+        <p>左メニュー<strong>「ステップ配信」→「新規作成」</strong>。名前は「特典配布シナリオ」。<strong>「配信タイミングを追加」</strong>で3つ設定します。</p>
+        <ul>
+          <li>1通目: <strong>ステップ開始直後</strong> → テンプレート「登録直後メッセージ」</li>
+          <li>2通目: <strong>経過時間・12時間後</strong> → テンプレート「2通目」</li>
+          <li>3通目: <strong>経過時間・23時間後</strong> → テンプレート「3通目」</li>
+        </ul>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <h3>4. 挨拶メッセージを「ステップ開始」に差し替える</h3>
+        <p><strong>「あいさつメッセージ」→「新規友だち用」→「アクション追加・編集」</strong>を開き、基礎編で設定したテンプレート単発を削除 → 左の<strong>「ステップ開始」</strong>から「特典配布シナリオ」を選んで保存。これで登録と同時に3通が自動で流れます。</p>
+        <h3>5. 受け取った人には送らないようにする</h3>
+        <p>1通目の特典URLに<strong>「URLタップ時のアクション」</strong>を設定します（テンプレート編集画面のURL設定から）。</p>
+        <ul>
+          <li>タグ「特典受け取り済み」を付ける（タグは新規追加でOK）</li>
+          <li>ステップ配信「特典配布シナリオ」を<strong>停止</strong>する</li>
+        </ul>
+        <p>これで、受け取り済みの人に2通目・3通目が届いてしつこくなる事故を防げます。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/03bafb2c824c4c5cbbc24ff78e95996c" title="実演動画: タグ管理（活用の幅が広がる）" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: タグ管理（活用の幅が広がる）</figcaption>
+        </figure>
+        <div class="callout info">
+          <p><strong>配信時間の目安</strong>: 夜18〜21時がいちばん読まれます。主婦層向けなら昼もあり。「何時間後」でなく日時で送りたいときは、配信タイミングで「日時指定」を選べます。</p>
+        </div>
+        <div class="callout warn">
+          <p><strong>ステップ配信は「作っただけ」では動きません。</strong>手順4の「挨拶メッセージをステップ開始に差し替える」までがワンセットです（基礎編STEP6と同じ落とし穴です）。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP2 上級 流入経路 ===== -->
+      <section id="astep2" class="block">
+        <h2>STEP 2【上級】流入経路を作る — どこから登録されたか全部わかる</h2>
+        <p>このステップが終わると、「YouTubeのどの動画から」「Instagramのプロフィールから」など、<strong>登録の入口ごとに人数を計測</strong>できるようになります。さらに、入口ごとに送る特典やシナリオを変えることもできます。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/07a693c234ca4cf5bb5c621f9155e6bc" title="実演動画: 流入経路の実例" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 流入経路の実例</figcaption>
+        </figure>
+        <h3>やることの流れ</h3>
+        <ul class="menu">
+          <li>エルメの<strong>「QRコードアクション（流入経路）」</strong>で、入口ごとに専用リンク・QRコードを発行する（例: YouTube概要欄用、Instagramプロフィール用、note用…）</li>
+          <li>各リンクに「経路のタグを付ける」「この特典テンプレを送る」「このステップ配信を始める」のアクションを設定する</li>
+          <li>発行した専用リンクを、それぞれのSNS・動画の概要欄に貼る</li>
+        </ul>
+        <p>講義では実際の運用例として、YouTubeの動画1本ごとに専用リンクを分けて、「どの動画が何人LINEに連れてきたか」を全部数字で見られる状態が紹介されました。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <div class="callout info">
+          <p><strong>コツ: タグは「アクションごとに必ず作る」。</strong>経路・特典受け取り・動画視聴など、行動のたびにタグが付くようにしておくと、あとから「この条件の人にだけ配信」が全部できるようになります（計測は仕組みで一番の財産です）。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP3 上級 リッチメニュー ===== -->
+      <section id="astep3" class="block">
+        <h2>STEP 3【上級】リッチメニューを設定する</h2>
+        <p>リッチメニューは、LINEのトーク画面の下に常に表示されるボタンです。ここに主要な導線をまとめると、登録者が迷わず次の行動に進めます。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/6ff2186d68fd46888054fd295add691b" title="実演動画: リッチメニューの活用" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: リッチメニューの活用</figcaption>
+        </figure>
+        <p>操作はエルメ公式マニュアルが分かりやすいので、設定はそちらで。ここでは<strong>合宿の質疑で出た「作り方の判断基準」</strong>を残しておきます。</p>
+        <ul class="menu">
+          <li>ボタンは<strong>多くて3つ</strong>。6個あると迷って分散する。一番のおすすめはボタン1つ</li>
+          <li><strong>一番目立つ場所（一番上）に、一番誘導したいボタン</strong>を置く（コンテンツを売りたいならその案内を最上段に）</li>
+          <li>定番の3つは「特典受け取り」「限定動画」「個別相談の申し込み」</li>
+        </ul>
+        <p>やってはいけないこと:</p>
+        <ul class="avoid">
+          <li>YouTube・noteへ「戻る」ボタンを置く（LINEはゴール地点。集客元へ逆流させる意味がない）</li>
+          <li>チャットボットを入れる（大企業向けの機能。個人の発信では不要）</li>
+        </ul>
+        <p><a class="btn-link" href="https://lme.jp/manual/category/customer_service/rich_menu/" target="_blank" rel="noopener noreferrer">🔗 エルメ公式マニュアル: リッチメニューの設定</a></p>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP4 収益化 シナリオ分岐 ===== -->
+      <section id="astep4" class="block">
+        <h2>STEP 4【収益化】複数のシナリオを作って、自動でつなげる</h2>
+        <p>ここが発展編の本丸です。このステップが終わると、「特典を受け取った人に、個別相談への誘導が自動で始まる」——つまり<strong>商品につながる流れ</strong>ができます。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/4d52410c802c454b892438fa1437dcb6" title="実演動画: 複数シナリオの作成と分岐（考え方）" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 複数シナリオの作成と分岐（考え方）</figcaption>
+        </figure>
+        <h3>考え方: 1シナリオ＝1目的</h3>
+        <p>シナリオ（ステップ配信）は、1つにつき目的を1つだけ持たせます。</p>
+        <ul class="menu">
+          <li>特典配布シナリオ → 特典を受け取ってもらうためだけ（STEP1で作成済み）</li>
+          <li>動画誘導シナリオ → 説明動画を見てもらうためだけ（売る商品の説明動画がある場合）</li>
+          <li>個別相談誘導シナリオ → 個別相談に申し込んでもらうためだけ</li>
+        </ul>
+        <p>そして「目的を達成した人を、次のシナリオへ自動で移す」。これをアクションでつなぎます。<strong>占い鑑定・カウンセリングへの誘導もまったく同じ流れです。</strong></p>
+        <figure class="shot"><img src="images/04-funnel-kouzou.png" alt="セールスファネルの構成: 動画誘導シナリオと個別相談誘導シナリオ" /><figcaption>講義スライドより。シナリオを目的ごとに分けて、順番につないでいきます</figcaption></figure>
+        <h3>1. 個別相談の「名前」を決める</h3>
+        <p>「個別相談」のままでは申し込まれにくいので、参加したくなる名前を付けます。</p>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>Claude Codeに送る（1つ目）</span>
+            <button type="button" class="copy-btn" data-target="q-adv2">コピー</button>
+          </div>
+          <pre id="q-adv2">私のジャンルに合う「個別相談の名前」の案を10個出してください。
+例: ロードマップ作成会／無料カウンセリング／適性診断セッション のような、参加のハードルが下がる名前でお願いします。</pre>
+        </div>
+        <h3>2. 誘導シナリオの構成と本文を作る</h3>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>Claude Codeに送る（「◯◯」を決めた名前に書き換える）</span>
+            <button type="button" class="copy-btn" data-target="q-adv3">コピー</button>
+          </div>
+          <pre id="q-adv3">特典を受け取った人を「◯◯」（個別相談）に誘導するステップ配信を作ってください。
+・まず3日間の構成案を出してください（登録直後は反応が高いので初日に厚めに、以降は1日1通・夜の配信を基本に）
+・構成が決まったら、各配信文の本文を作成してください</pre>
+        </div>
+        <p>構成 → 本文の順で出てきます。内容を確認して、テンプレート登録 → ステップ配信に組みます（操作はSTEP1と同じ）。</p>
+        <h3>3. 特典受け取りをきっかけに、自動で始める</h3>
+        <p>特典URL（またはバナー）のタップ時アクションに、<strong>「ステップ開始: 個別相談誘導シナリオ」</strong>を追加します。これで「特典を受け取った人に、次の誘導が自動で始まる」がつながりました。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/b125ddc2afc143eca10af85ead4b46a8" title="実演動画: 個別相談シナリオの実演" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 個別相談シナリオの実演</figcaption>
+        </figure>
+        <div class="callout info">
+          <p><strong>説明動画（VSL）を挟みたい場合</strong>: エルメの「回答フォーム」に動画を貼ったページを作り、そのページを開いた人に「視聴済み」のアクションを付けるやり方が紹介されました。動画を見た人だけを個別相談誘導へ進める、という分岐ができます（まずは動画なしで個別相談に直接誘導でもOKです）。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP5 収益化 カレンダー予約 ===== -->
+      <section id="astep5" class="block">
+        <h2>STEP 5【収益化】個別相談の予約を自動化する（カレンダー予約）</h2>
+        <p>個別相談を実際に受けるなら、ここまでがセットです。このステップが終わると、<strong>予約の受付・確認・リマインド・Zoomリンクの送付が全部自動</strong>になります。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/7f15f431be974b018cb5089bcb7012bc" title="実演動画: シナリオ設置と予約設定" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: シナリオ設置と予約設定</figcaption>
+        </figure>
+        <h3>やることの流れ</h3>
+        <ul class="menu">
+          <li>エルメの<strong>「サロン面談予約」</strong>で予約カレンダーを新規作成（1人で対応するなら担当者1人でOK）</li>
+          <li>対応できる曜日・時間帯を設定する（あとから全部変更できます）</li>
+          <li><strong>Googleカレンダーと連携</strong>すると、空いている時間だけが予約可能になります</li>
+          <li>予約フォームの質問項目を設定（名前のほか、事前に聞いておきたいことを1〜2個）</li>
+        </ul>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/85fb32051c72494ca56690fe1aa8cbb0" title="実演動画: 個別相談の予約受付と回答フォーム" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 個別相談の予約受付と回答フォーム</figcaption>
+        </figure>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <ul class="menu">
+          <li><strong>リマインドメッセージ</strong>を設定: 前日と、開始20分前にZoomリンク付きで自動送信（Zoomは使い回しのリンクを1つ作って貼っておけば、毎回発行しなくてOK）</li>
+          <li>予約されたときのアクション: タグ「個別相談予約済み」を付けて、進行中のステップ配信を停止（予約した人に営業配信を送り続けないため）</li>
+        </ul>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/9219947743d6451a916c486536fcd37a" title="実演動画: 個別相談のリマインドとその他テクニック" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 個別相談のリマインドとその他テクニック</figcaption>
+        </figure>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <div class="callout info">
+          <p>リマインドを入れると「予約したのに来ない」が大きく減ります。個別相談で売上を作るなら、ここは効果に直結する設定です。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP6 数字で改善 クロス分析 ===== -->
+      <section id="astep6" class="block">
+        <h2>STEP 6【改善】クロス分析 — 数字で見て改善する</h2>
+        <p>友だちが増えてきたら、感覚ではなく数字で見ます。エルメの<strong>クロス分析</strong>を使うと、「流入経路 × 成果地点」の表が作れます。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/1e0bfa4e82b34492a9453d93f5ebfb4a" title="実演動画: クロス分析" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: クロス分析</figcaption>
+        </figure>
+        <ul class="menu">
+          <li>縦軸: 流入経路（YouTubeのどの動画から・Instagramから…）</li>
+          <li>横軸: 成果地点（特典受け取り・動画視聴・個別相談予約…）</li>
+          <li>→「どの入口の人が、どこまで進んでいるか」が一目で分かる</li>
+        </ul>
+        <p>最初に一度設定すれば、あとは定期的に見るだけです。<strong>目安として、友だちが100人を超えたあたりから使い始めれば十分</strong>です。それまでは集めることに集中してください。</p>
+        <p>具体的な操作と管理シートの使い方は、講座の計測パートで解説されています。</p>
+        <p><a class="btn-link" href="https://utage-system.com/members/zT66X07UciKh/course/IW6wPLM8NbPg/lesson/aIqvTYijeAed" target="_blank" rel="noopener noreferrer">▶ 講座動画「エルメッセージ実装ガイド」を見る（会員サイト）</a></p>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP7 番外編 診断 ===== -->
+      <section id="astep7" class="block">
+        <h2>STEP 7【番外編】診断コンテンツをエルメで作る</h2>
+        <p>「あなたは◯◯タイプ」のような診断は、エルメの機能の組み合わせで作れます。仕組みだけ知っておくと、特典や企画の幅が広がります。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/18f08aabab1546b1bb68346f3b009816" title="実演動画: 診断の作り方" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 診断の作り方</figcaption>
+        </figure>
+        <ul class="menu">
+          <li>カルーセル（ボタン付きメッセージ）で質問を送り、選んだ回答ごとに<strong>ポイントを加算</strong>する（友だち情報にポイント項目を作る）</li>
+          <li>「診断結果を見る」ボタンに<strong>絞り込み設定</strong>を付け、ポイント3以上なら結果A、2以下なら結果B…と出し分ける</li>
+          <li>絞り込みを付けないと結果が全部同時に送られてしまうので注意</li>
+        </ul>
+        <div class="callout info">
+          <p><strong>作るときのコツは「後ろの設問から作る」。</strong>2問目を作っていないと1問目から2問目につなげられないため、最後の設問 → 1つ前 → …と逆順で作ると迷いません（ゴールから逆算して作るのは、エルメ構築全体のコツでもあります）。</p>
+        </div>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（基礎編「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== おわりに ===== -->
+      <section id="exit" class="block closing">
+        <h2>🎓 おわりに — ここまで作れたあなたへ</h2>
+        <p>基礎編と発展編でやってきた「特典シナリオ＋誘導シナリオ＋バナー＋予約導線」の構築は、実は<strong>そのまま仕事になるスキル</strong>です。講義では、この一式の構築代行が1件15〜20万円ほどで受注されている実例が紹介されました。自分の商品がまだない人は、人のLINE構築を手伝う側に回る道もあります。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/c8f5cc19e907415789b0d6dca99c43cd" title="おまけ: LINE構築代行の話" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 おまけ: LINE構築代行の話</figcaption>
+        </figure>
+        <p>そして自分の発信では、ここから先はシンプルです。</p>
+        <ul class="menu">
+          <li>発信を続けて、LINEに友だちを集める（導線はもう自動で動いています）</li>
+          <li>数字を見て、詰まっているところを1つずつ直す</li>
+        </ul>
+        <div class="closing-cta">
+          <a class="btn-link" href="index.html">← 基礎編マニュアルに戻る</a>
+        </div>
+        <p class="closing-line">仕組みは一度作れば、あなたが寝ている間も働き続ける。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>公式LINE 実践マニュアル（発展編）｜RISE夏合宿アーカイブ</p>
+      <p class="muted">RISE事務局</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

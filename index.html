@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 検索エンジンに載せない（講座生限定配布用。一般公開したい場合はこの行を削除） -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- セキュリティ設定（外部スクリプト等を遮断。基本このまま） -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; frame-src https://www.loom.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>公式LINE 実践マニュアル（基礎編）｜RISE夏合宿アーカイブ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== ヒーロー（冒頭の看板） ===== -->
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">夏合宿アーカイブ</p>
+        <h1>公式LINE 実践マニュアル<br />基礎編</h1>
+        <p class="subtitle">LINE登録で「挨拶メッセージ＋特典」が自動で届く状態を、この1ページで作りきります。</p>
+        <p class="author">マニュアル制作：RISE事務局</p>
+      </div>
+    </header>
+
+    <!-- ===== 目次 ===== -->
+    <nav class="toc" aria-label="目次">
+      <div class="toc-inner">
+        <span class="toc-title">目次</span>
+        <a href="#goal">ゴール</a>
+        <a href="#intro">全体像</a>
+        <a href="#principle">大原則</a>
+        <a href="#day1">Day1の前提</a>
+        <a href="#kit">キットとは</a>
+        <a href="#step0">STEP0</a>
+        <a href="#step1">STEP1</a>
+        <a href="#step2">STEP2</a>
+        <a href="#step3">STEP3</a>
+        <a href="#step4">STEP4</a>
+        <a href="#step5">STEP5</a>
+        <a href="#step6">STEP6</a>
+        <a href="#step7">STEP7</a>
+        <a href="#banner">＋α</a>
+        <a href="#next">発展編へ</a>
+        <a href="glossary.html">📖 用語集</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <!-- ===== ゴール（最初に読む） ===== -->
+      <section id="goal" class="block">
+        <h2>🏁 Day2で何をやったのか — このページのゴール</h2>
+        <p>合宿Day2でやったことは、ひと言でいうと<strong>「集めたアクセスをお金に変える入口づくり」</strong>です。公式LINEとエルメッセージ（LINE拡張ツール）をつないで、次の状態を全員で作りました。</p>
+        <ul class="menu">
+          <li>あなたの公式LINEに友だち追加されたら、<strong>挨拶メッセージと特典が自動で届く</strong></li>
+        </ul>
+        <p>これができると何が変わるのか。今は、SNSやYouTubeでどれだけアクセスを集めても、見た人はそのまま流れて消えていきます。この仕組みを作ると、<strong>各SNSのプロフィールや動画の概要欄に登録リンクを貼っておくだけで、見込み客が「友だちリスト」としてLINEに貯まり続けます</strong>。</p>
+        <p>講義の収益シミュレーションでは、この友だちリストの価値は<strong>1人あたり売上6,000円〜12,000円換算</strong>という話がありました（根拠は講義動画の#1で確認できます）。つまり、貯まる仕組みを先に作っておけば——</p>
+        <ul class="menu">
+          <li>売る商品がまだ決まっていなくても、発信が「資産」に変わり始める</li>
+          <li>商品・サービスが決まったら、貯まったリストにすぐ案内できる（そこは発展編でやります）</li>
+        </ul>
+        <p><strong>売るものは、後から決めていい。導線だけ先に作っておく。</strong>これがDay2の結論で、このページのゴールです。参加していない方・途中でついていけなくなった方も、このページの順番どおりに進めれば同じものが作れます。</p>
+        <figure class="shot"><img src="images/01-day1-funnel-intro.png" alt="noteから公式LINE、個別相談へつながる導線の全体像スライド" /><figcaption>講義で紹介された実案件の全体像。集客媒体 → 公式LINE → 個別相談。基礎編で作るのは真ん中の「公式LINEに入ってもらって特典を渡す」部分です</figcaption></figure>
+        <p>STEP0からSTEP7まで、上から順に進めてください。まとまった時間が取れなくても、ステップごとに区切って進められます。</p>
+      </section>
+
+      <!-- ===== 全体像 ===== -->
+      <section id="intro" class="block">
+        <h2>🗺 今回やることの全体像</h2>
+        <p>ゴールが見えたところで、何をどの順番でやるのかの地図です。やることは、この4段だけです。</p>
+        <div class="flow">
+          <div class="flow-box"><span class="flow-tag">準備する（STEP 0〜4）</span>AIに自分を覚えさせて、道具をそろえる<br /><small>自分の情報 → 公式LINE → エルメ登録 → 連携 → ファネルキット</small></div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-box"><span class="flow-tag">作る（STEP 5〜6）</span>特典を決めて挨拶メッセージを作り、エルメに設定する<br /><small>文章はAIが作ります。あなたは選んで、コピペするだけ</small></div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-box flow-goal"><span class="flow-tag">確認する（STEP 7）</span>テスト登録して、挨拶メッセージ＋特典が自動で届いたら<strong>ゴール</strong> 🎉<br /><small>見込み客をLINEに貯められる状態になりました</small></div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-box flow-next"><span class="flow-tag">その先（発展編）</span>ステップ配信 → 個別相談 —— 商品・サービスにつなげる</div>
+        </div>
+        <p>進める前に、押さえてほしい前提が5つあります。</p>
+        <ul class="menu">
+          <li>ゴールは「挨拶メッセージ＋特典の自動配布」まで。全員ここまでやってほしいです</li>
+          <li>分身AI＝自分の情報が入っていないと、AIは作りづらい（だからSTEP0が最初です）</li>
+          <li>ファネルキットはClaude Codeに読み込ませれば、あとはAIが作ってくれる</li>
+          <li>特典づくりはClaude Codeじゃなくても、いつも使っているAIでもいい</li>
+          <li>困ったらAIに投げれば進む——それが今のAIエージェント時代</li>
+        </ul>
+        <h3>完成形のフォルダ構造（見本）</h3>
+        <p>Day1とDay2を合わせると、あなたのフォルダはこうなります。この形を目指します（一部のファイルは省略しています）。</p>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>あなたの合宿フォルダ（完成形の見本）</span>
+          </div>
+          <pre class="mono">📁 あなたの合宿フォルダ（Obsidianと連携・Day1で作成）
+├─ CLAUDE.md ……………… AIの育て方ルール（Day1で配布）
+├─ 📁 core ……………………… あなたの情報（Day1で記入）
+│   ├─ 01_profile.md …… プロフィール・実績
+│   ├─ 02_voice.md ……… 口調・言葉づかい
+│   └─ 03_mindset.md …… 考え方・方針
+├─ 📁 youtube-kit ………… YouTube投稿づくりの型（Day1で配布）
+├─ 📁 insta-kit …………… Instagram投稿づくりの型（Day1で配布）
+└─ 📁 funnel-kit …………… LINE配信の全ノウハウ（STEP4で追加）
+    ├─ README.md
+    ├─ 📁 rules ……………… 書き方のルール一式
+    └─ 📁 data ………………… シナリオ構成などの知識</pre>
+        </div>
+        <p>coreにあなたの情報。youtube-kit・insta-kit・funnel-kitに、それぞれの発信の「型」。<strong>あなたの情報と型が揃うと、AIが「あなたの言葉で・売れる型の」文章を作れるようになります。</strong>このページで追加するのは、いちばん下のfunnel-kitです。</p>
+      </section>
+
+      <!-- ===== 大原則 ===== -->
+      <section id="principle" class="block">
+        <h2>⚠️ 進め方の大原則</h2>
+        <p><strong>分からなくなったら、AIに聞くのが一番です。</strong></p>
+        <p>動画を見て手が止まったら、AIに聞くことで進めます。AIは公式サイトの情報なども引っ張ってこられるので、自分で調べ回るより速いです。</p>
+        <p class="prompt-group-label">聞き方の例（そのままコピーして、状況に合わせて書き換えてOK）</p>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>操作で迷子になったとき</span>
+            <button type="button" class="copy-btn" data-target="p-ask1">コピー</button>
+          </div>
+          <pre id="p-ask1">エルメッセージと公式LINEを連携したいです。
+今、画面には「◯◯」と表示されています（スクリーンショットも添付します）。
+初心者向けに、次にやることを1つずつ教えてください。</pre>
+        </div>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>エラーやメッセージの意味が分からないとき</span>
+            <button type="button" class="copy-btn" data-target="p-ask2">コピー</button>
+          </div>
+          <pre id="p-ask2">Claude Codeにフォルダをアップロードしたら「ファイルが見当たりません」と言われました。
+何が原因ですか？　どうすれば解決できるか、1つずつ教えてください。</pre>
+        </div>
+        <div class="callout info">
+          <p>聞くときのコツ: <strong>いま見ているページのURLと、画面のスクリーンショットをそのままAIに送る</strong>のがいちばん確実です。「この画面のどこを押せばいい？」というところまで案内してくれます。</p>
+        </div>
+        <ul>
+          <li><strong>このマニュアルはRISE講座生限定です。</strong>外部への共有・再配布はご遠慮ください。</li>
+          <li>ツールの画面は更新で変わることがあります。見た目が違っても、あわてずAIに聞けば進めます。</li>
+        </ul>
+        <details class="disclaimer">
+          <summary>📄 免責事項</summary>
+          <p>本マニュアルは情報提供を目的としたものです。各ツールの画面・仕様・料金は変更される場合があります。お使いの環境（OS・ブラウザ・プラン）によって表示が異なることがあります。</p>
+        </details>
+      </section>
+
+      <!-- ===== Day1の前提 ===== -->
+      <section id="day1" class="block">
+        <h2>📚 先に「Day1の講義」を見てください（いちばん大事な前提）</h2>
+        <p>このマニュアルに入る前の、必ず守ってほしい前提です。</p>
+        <p>今回のLINE構築は、文章をぜんぶAI（Claude Code）に作ってもらいます。そのAIが<strong>あなたの情報を持っていない</strong>と、作成のたびに質問攻めになって、なかなか実践に入れません。</p>
+        <p>Day1の講義では、その土台を作りました。</p>
+        <ul class="menu">
+          <li>マインド講義 — 結果を出す人の考え方（あべむつき講師）</li>
+          <li>タイムマシンプロンプト — 穴埋め形式で「理想の一日」を言語化して、目指す方向をはっきりさせた</li>
+          <li>分身AIの穴埋めプロンプト — 質問に正直に答えて、あなた専用の「分身AIプロンプト」を完成させた</li>
+          <li>ObsidianとClaude Codeを紐付けて、「分身AI×SNS投稿キット」をセットアップした（りょうや講師）</li>
+          <li>事前アンケートの回答 — どんなアカウントを目指すかを、AIに渡す材料にした</li>
+          <li>公式LINEで収益化する準備の話（高橋講師 → そのままDay2に続く）</li>
+        </ul>
+        <p>今まで情報が垂れ流しで、AIが勝手にいろいろ決めていたところを、<strong>あなた自身が管理する</strong>——という講座です。先に見てから進めると、このページの理解がまったく変わります。</p>
+        <h3>高橋講師パートの流れ（見る前に）</h3>
+        <p>高橋講師パート（約28分）は、この順番で進みます。</p>
+        <ul class="menu">
+          <li><strong>自己紹介</strong>（〜4分あたり）— フリーランス6年目、公式LINE構築のプロとしての実績</li>
+          <li><strong>AIライティングのコツ</strong>（4分〜13分あたり）— 「事前情報を集める」「類似事例をリサーチする」「AI出力は必ず手直しする」の3点。ここがDay2で使うファネルキットの考え方の土台です</li>
+          <li><strong>キットを使った実演</strong>（13分〜27分あたり）— 実際の案件でファネルキットを使い、公式LINEのシナリオを組み立てる様子をそのまま見せています</li>
+          <li><strong>宿題の案内</strong>（27分〜）— L Messageへの登録・公式LINEとの連携（STEP0で確認する内容と同じです）</li>
+        </ul>
+        <div class="callout info">
+          <p>この講義は、既存講座の<strong>「RISEセールスファネル講座」</strong>（会員サイトでは「AIライティングのやり方」という講座名で掲載）のダイジェスト版にあたります。時間がある方は、本編も合わせて見ておくと理解がさらに深まります。</p>
+          <p><a class="btn-link" href="https://utage-system.com/members/zT66X07UciKh/course/IW6wPLM8NbPg/lesson/7RqHCBP4jcJ7" target="_blank" rel="noopener noreferrer">▶ RISEセールスファネル講座（AIライティングのやり方）を見る</a></p>
+          <p>講義で使っているプロンプトをそのまま文章で見たい方は、<a class="btn-link" href="https://docs.google.com/document/d/1KkTJP1EpACFUccJas0P2EExsXJA3JpZfPk3Ze0TgDB0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">📄 LINEライティング・プロンプト集</a>もあわせてどうぞ。</p>
+        </div>
+        <figure class="shot"><img src="images/02-ai-writing-tips.png" alt="AIライティングのコツ: 事前情報をとにかく集める・類似事例をリサーチしナレッジを貯める・必ず手直しを行う" /><figcaption>講義スライドより「AIライティングのコツ」。1番が「事前情報をとにかく集める」＝Day1でやったことです</figcaption></figure>
+        <h3>自分はどこから始めればいい？（レベル別）</h3>
+        <ul>
+          <li><strong>発信の方向性がまだ決まっていない方</strong> → Day1の講義で方向性を決めるところから始めてください</li>
+          <li><strong>AIに自分の情報がまだ入っていない方</strong> → 下のSTEP0で情報を入れてから進んでください</li>
+          <li><strong>Day1のワークが済んでいる方</strong> → STEP0の完了チェックだけ確認して、STEP1へ</li>
+        </ul>
+        <div class="video-link">🎬 Day1講義アーカイブ（準備中）</div>
+      </section>
+
+      <!-- ===== ファネルキットとは ===== -->
+      <section id="kit" class="block">
+        <h2>📦 「ファネルキット」とは</h2>
+        <p>このページの途中から「ファネルキット」というものが出てきます。先に正体を説明しておきます。</p>
+        <p>ファネルキットは、<strong>Day2でやる公式LINEのノウハウ——高橋講師のノウハウ——が全て入ったフォルダ</strong>です。バナーの文章、登録後の挨拶メッセージ、個別相談につなげるステップ配信……そういった文章を作るときの<strong>最低限のライティングルール</strong>が詰まっています。</p>
+        <p>だから、何か文章を作るときは<strong>ファネルキットさえフォルダに入っていれば、「あなたの情報 × キットのノウハウ」で、それ専用の文章が作れます</strong>。アーカイブ動画で「挨拶メッセージを作成します」という場面になったら、あなたも同じように指示を出すだけです。</p>
+        <div class="callout info">
+          <p>あなたが「こういう構成がいいんじゃないか」と考える必要はありません。考える必要があるのは<strong>あなた自身の情報だけ</strong>——運用しているジャンル、アカウント情報、何を販売するか、何を紹介するか。</p>
+        </div>
+        <p>ただし、AIが出した文章を<strong>そのまま使うわけではありません</strong>。間違っていたらその都度修正して、あなたのノウハウとしてObsidianのフォルダにどんどん貯めていく——ここが<strong>Day1「分身を育てる」話につながってくるところ</strong>です。</p>
+        <figure class="shot"><img src="images/03-seisaku-tejun.png" alt="制作の手順: 1事前情報を詰め込む、2案件特有の前提条件を指定、3シナリオごとに構成案を作る、4各配信文を作成" /><figcaption>講義スライドより「制作の手順」。①事前情報＝Day1でやったこと。②〜④は、キットを入れたAIに頼めば進みます</figcaption></figure>
+      </section>
+
+      <!-- ===== STEP0 ===== -->
+      <section id="step0" class="block">
+        <h2>STEP 0　Day1で作ったものを、自分のフォルダに揃える</h2>
+        <p>Day2のLINE配信文づくりは、<strong>Day1でAIと一緒に作った「あなたの分身」の上に乗っています</strong>。分身に情報が入っていれば、特典も挨拶メッセージも最初から「あなたの言葉」で出てきます。まず、Day1の成果物が揃っているかを確認します。</p>
+        <h3>1. 完了チェック（Day1でやったこと、そのままです）</h3>
+        <ul class="menu">
+          <li>ObsidianとClaude Codeの紐付けができている</li>
+          <li>「分身AI×SNS投稿キット」のセットアップが済んでいる（導入マニュアルの第三章まで＝合宿の最低ライン）</li>
+          <li>タイムマシンプロンプトと、分身AIの穴埋めプロンプトの回答——つまり<strong>あなたの情報</strong>——がフォルダに入っている</li>
+        </ul>
+        <p>全部YESなら、このステップは完了です。STEP1へ進んでください。</p>
+        <h3>2. まだの方: Day1の導入マニュアルで揃える（いちばん確実）</h3>
+        <p>Day1の内容はすべて導入マニュアルにまとまっています。Day2の全部がこの上に乗るので、時間が取れるならこちらを先に済ませてください。</p>
+        <p><a class="btn-link" href="https://ryoya9595.github.io/bunshin-sns-kit-manual/" target="_blank" rel="noopener noreferrer">🔗 分身AI×SNS投稿キット 導入マニュアルを開く</a></p>
+        <h3>3. 今日はLINEだけ先に作りたい方: 普段のAIから最低限の情報をもらう（簡易ルート）</h3>
+        <p>今まで相談してきたAI（ChatGPTなど）には、あなたの情報がメモリとして溜まっています。それをまとめてもらい、最低限の自己紹介資料として使います。普段使っているAIを開いて、下の文章を送ってください。</p>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>普段使っているAIに送る</span>
+            <button type="button" class="copy-btn" data-target="p-step0">コピー</button>
+          </div>
+          <pre id="p-step0">これまでの会話やメモリにある私の情報をもとに、「AIに渡す自己紹介資料」を作ってください。
+以下の項目でまとめてください。
+
+・プロフィール（名前・肩書き・経歴）
+・発信ジャンルとアカウント情報（媒体・フォロワー数・どんな発信をしているか）
+・実績（数字があれば数字で）
+・ターゲット（どんな人に向けて発信しているか）
+・目指している方向性（何を売りたいか・どうなりたいか）
+
+まだ決まっていない項目は「未定」と書いてください。</pre>
+        </div>
+        <h3>4. もらった文章をDay1のフォルダに入れる</h3>
+        <p>出てきた文章をコピーして、Claude Codeのチャットに貼り付け、「この内容を『自己紹介.md』という名前でフォルダに保存して」と頼めばOKです。</p>
+        <p>保存できたと返ってきたら、先へ進めます（余裕ができたら、手順2の導入マニュアルで分身をちゃんと作るのがおすすめです）。</p>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP1 ===== -->
+      <section id="step1" class="block">
+        <h2>STEP 1　LINE公式アカウントを作成する</h2>
+        <p>このステップが終わると、あなた専用の公式LINEアカウントができます。事前準備で作成済みの方はSTEP2へ進んでください。オンライン参加の方・当日参加できなかった方はここからです。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/15961294584f47e48d5d996cd61575f5" title="講座動画: LINE公式アカウントの作り方" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 講座動画: LINE公式アカウントの作り方</figcaption>
+        </figure>
+        <div class="callout info">
+          <p>この動画では、登録のあとに公式LINE側でやっておく設定もあわせて解説していますが、そこは後から<strong>エルメッセージ側でできる</strong>内容です。ここでは<strong>LINEの登録（アカウント作成）までできればOK</strong>です。</p>
+        </div>
+        <h3>1. 開設ページを開く</h3>
+        <p>下のボタンからLINE公式アカウントの開設ページを開き、「アカウントを作成」をクリックします。</p>
+        <p><a class="btn-link" href="https://www.lycbiz.com/jp/service/line-official-account/" target="_blank" rel="noopener noreferrer">🔗 LINE公式アカウント 開設ページを開く</a></p>
+        <h3>2. LINEビジネスIDでログインして作成する</h3>
+        <p>普段使っているLINEアカウントでログイン → アカウント名（あなたの発信者名でOK）・業種などを入力して進めます。</p>
+        <p>「LINE Official Account Manager」という管理画面が開けるようになったら成功です。</p>
+        <div class="callout info">
+          <p>アカウント名はあとから変更できます。まずは作ることを優先してください。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP2 ===== -->
+      <section id="step2" class="block">
+        <h2>STEP 2　エルメッセージ（L Message）に登録する</h2>
+        <p>このステップが終わると、LINEマーケティングの道具が手に入ります。</p>
+        <p>エルメッセージは、よく聞く「Lステップ」のような<strong>LINE拡張ツール</strong>です。公式LINEだけではできない「自動のステップ配信」「タグ管理」「流入経路の計測」などができるようになります。無料プランから始められます。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/21b66c16f5d04380b0643c23eb7b0b16" title="講座動画: エルメッセージの登録" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 講座動画: エルメッセージの登録</figcaption>
+        </figure>
+        <h3>1. 公式の登録マニュアルを開いて、その通りに進める</h3>
+        <p>登録の手順は、エルメ公式マニュアルに全手順のスクリーンショット付きでまとまっています。下のボタンで開いて、<strong>「エルメアカウントの作成」の ①〜⑨</strong> をその順番で進めてください（⑨の動画確認まで行けば登録は完了です）。</p>
+        <p><a class="btn-link" href="https://lme.jp/manual/register/" target="_blank" rel="noopener noreferrer">🔗 エルメ公式マニュアル「アカウント登録〜接続」を開く</a></p>
+        <div class="callout info">
+          <p>動画内で紹介している<strong>専用リンクから登録すると、無料添削の特典</strong>が付きます。プランは、ほとんどの方は<strong>フリープランで十分</strong>です。最初の段階では、まったく問題ありません。</p>
+        </div>
+        <div class="callout warn">
+          <p><strong>添削は、一番最初から受けるものではありません。</strong>まず自分で一度作ってみて、<strong>1回だけ添削を受ける</strong>想定の特典です。挨拶メッセージの設定だけでなく、自分の商品・サービスや他の人の商品のアフィリエイトなど、<strong>収益化までの導線ができた時点</strong>で申請してください。おすすめのタイミングは、Day2の講義（基礎編・発展編）をすべて終えて、有料プランへの変更が必要になったときです。</p>
+        </div>
+        <h3>2. メインページが開けるか確認する</h3>
+        <p>ログイン後、「アカウント一覧」という画面が出た場合は、<strong>「メインページに戻る」</strong>をクリックしてください。管理画面（メインページ）が開けたら、このステップは完了です。</p>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP3（最重要） ===== -->
+      <section id="step3" class="block highlight">
+        <span class="badge">★ ここが最大のつまずきポイント</span>
+        <h2>STEP 3　公式LINEとエルメッセージを連携する</h2>
+        <p>このステップが終わると、エルメッセージからあなたの公式LINEを操作できるようになります。<strong>合宿でも半数の方がここで詰まりました。</strong>作業自体は、STEP2で開いた公式マニュアルの続き（Step.1〜Step.5）です。</p>
+        <h3>1. 先に全体の地図を頭に入れる（迷子防止）</h3>
+        <p>公式マニュアルには難しそうな言葉が出てきますが、やっていることは<strong>「公式LINEとエルメをお互いに紹介して、握手させる」だけ</strong>です。いま自分がどのStepにいるかを、この表で確認しながら進めてください。</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>公式マニュアルの見出し</th><th>やっていること</th></tr></thead>
+            <tbody>
+              <tr><td>Step.1 接続情報の確認</td><td>つなぐ準備。必要な情報のありかを確認する</td></tr>
+              <tr><td>Step.2 LINEログインチャネル作成</td><td>LINE側に「エルメ用の入口」を作る</td></tr>
+              <tr><td>Step.3 API情報入力</td><td>LINE側の情報をコピーして、エルメに貼り付ける</td></tr>
+              <tr><td>Step.4 Webhook設定</td><td>エルメ側の住所をコピーして、LINEに貼り付ける</td></tr>
+              <tr class="row-flag"><td>Step.5 接続テスト</td><td>握手できたかを確認する（ここまでやって完了）</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>2. 公式マニュアルの「注意点」→ Step.1〜5 を順番に進める</h3>
+        <p>まずページ冒頭の<strong>「エルメとLINE公式アカウント接続時の注意点」</strong>を読んでから、Step.1〜5を画面のスクリーンショットの通りに進めてください。</p>
+        <p><a class="btn-link" href="https://lme.jp/manual/register/" target="_blank" rel="noopener noreferrer">🔗 エルメ公式マニュアル「アカウント登録〜接続」を開く</a></p>
+        <h3>3. 成功判定</h3>
+        <p><strong>Step.5の接続テストで、自分のLINEにテストメッセージが届いたら連携成功です。</strong>ここまで来たら、このマニュアルでいちばんの山は越えました。</p>
+        <h3>4. どうしてもつまずいたら — AIに公式マニュアルごと渡して、一緒に進める</h3>
+        <p>公式マニュアルを見ても進めなくなったら、<strong>マニュアルのURLごとAIに送って、伴走してもらう</strong>のが確実です。下の文章をそのまま送ってください。</p>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>AIに送る（「Step.◯」を自分の現在地に書き換える）</span>
+            <button type="button" class="copy-btn" data-target="p-ask3">コピー</button>
+          </div>
+          <pre id="p-ask3">エルメッセージと公式LINEの連携をやっています。
+この公式マニュアルの手順を、一つずつ一緒に進めるのを手伝ってください。
+https://lme.jp/manual/register/
+
+いま「Step.◯」まで進んでいます。次に何をすればいいか、1つずつ確認しながら教えてください。</pre>
+        </div>
+        <p>迷ってどこにいるか分からなくなったときは、<strong>いま自分が開いているページのURLと画面のスクリーンショットをAIに送れば「いまここですよ。次はここを押してください」と案内してくれます。</strong>AIに聞きながら1つずつ進めれば、確実にゴールできます。</p>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP4 ===== -->
+      <section id="step4" class="block">
+        <h2>STEP 4　ファネルキットをClaude Codeのフォルダに入れる</h2>
+        <p>このステップが終わると、AIが「合宿の全ノウハウ」を使えるようになります。冒頭の「完成形のフォルダ構造」に到達するステップです。</p>
+        <h3>1. ファネルキット（zip）をダウンロードする</h3>
+        <div class="callout info">
+          <p>ファネルキットのダウンロードリンクは、公開時にここへ設置します（オープンチャットの配布は流れてしまうため、このページを保存版にします）。</p>
+        </div>
+        <h3>2-A. zipを解凍する（Macの方）</h3>
+        <p>ダウンロードしたzipファイルを<strong>ダブルクリック</strong>します。同じ場所に「funnel-kit」フォルダができます。</p>
+        <h3>2-B. zipを解凍する（Windowsの方）</h3>
+        <p>ダウンロードしたzipファイルを<strong>右クリック →「すべて展開」</strong>をクリックします。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <h3>3. Day1のフォルダに、フォルダごと入れる</h3>
+        <p>解凍してできた「funnel-kit」フォルダを、Day1で作ったObsidian連携フォルダの中に<strong>フォルダごとドラッグ＆ドロップ</strong>します。中身のファイルだけを移すのではなく、フォルダごとです。</p>
+        <h3>4. Claude Codeに反映を頼む</h3>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>Claude Codeに送る</span>
+            <button type="button" class="copy-btn" data-target="p-step4">コピー</button>
+          </div>
+          <pre id="p-step4">フォルダに「funnel-kit」を追加しました。
+この中身をすべて確認して、今後のLINE配信文の作成に使えるように反映してください。</pre>
+        </div>
+        <p>「反映しました」「確認しました」といった返事が来たら成功です。実行してよいか確認されたら、そのまま実行してもらってください。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <div class="callout warn">
+          <p><strong>「ファイルが見当たりません」と言われたら</strong>zipを解凍していないか、中身の一部だけを渡しています。解凍した「funnel-kit」フォルダごと入れ直してください。<strong>「復元できます」と出たら</strong>「復元してください」と返信すればOKです。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP5 ===== -->
+      <section id="step5" class="block">
+        <h2>STEP 5　特典を決めて、挨拶メッセージを作る</h2>
+        <p>このステップが終わると、「LINE登録ありがとうございます＋特典はこちら」という1通目の文章が完成します。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/8eade34b0eeb42a3bcfbac1dfaa65cce" title="実演動画: 特典と挨拶メッセージを作る" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: 特典と挨拶メッセージを作る</figcaption>
+        </figure>
+        <h3>1. 特典のアイデアを出してもらう</h3>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>Claude Codeに送る（1つ目）</span>
+            <button type="button" class="copy-btn" data-target="p-step5a">コピー</button>
+          </div>
+          <pre id="p-step5a">公式LINEの登録特典のアイデアを5つ考えてください。
+私の発信ジャンルとアカウント情報をもとにお願いします。</pre>
+        </div>
+        <p>5つの候補が出てきます。「自分のジャンルの人が一番欲しがりそうで、自分が用意できるもの」を1つ選んでください。迷ったら仮でOKです（あとから変えられます）。</p>
+        <h3>2. 挨拶メッセージを作ってもらう</h3>
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span>Claude Codeに送る（「◯◯」を選んだ特典名に書き換える）</span>
+            <button type="button" class="copy-btn" data-target="p-step5b">コピー</button>
+          </div>
+          <pre id="p-step5b">特典「◯◯」を配布する、LINE登録直後の挨拶メッセージを作ってください。
+・売る商品はまだ決まっていないので、特典を渡すことだけが目的です
+・バナー画像はまだ無いので、URLで受け取ってもらう形にしてください</pre>
+        </div>
+        <p>完成した文章が出てきたら成功です。この文章は次のSTEP6で使うので、そのままにしておいてください。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <div class="callout info">
+          <p><strong>AIがあなたの情報を聞いてきたら、</strong>STEP0に戻って自己紹介資料を入れてください。情報が入っていれば、聞かれずに一気に進みます。</p>
+        </div>
+        <div class="callout info">
+          <p><strong>文章づくりのAIは、どれを使ってもOKです。</strong>会員サイトの講座動画「AIライティングのやり方」はClaudeのプロジェクト機能で作っていますが、入っているノウハウはファネルキットと同じものです。Claude Codeでも、Claudeでも、普段使っているAIにキットを入れて作っても大丈夫。ただ今回は、<strong>Day1の分身AIとつなげるためにClaude Codeで全部管理するのがおすすめ</strong>です。知識がどんどん溜まって、使うほど充実していきます。</p>
+          <p><a class="btn-link" href="https://utage-system.com/members/zT66X07UciKh/course/IW6wPLM8NbPg/lesson/7RqHCBP4jcJ7" target="_blank" rel="noopener noreferrer">▶ 講座動画「AIライティングのやり方」を見る（会員サイト）</a></p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP6 ===== -->
+      <section id="step6" class="block">
+        <h2>STEP 6　エルメッセージに設定して、自動で送られるようにする</h2>
+        <p>このステップが終わると、友だち追加された瞬間に、さっきの挨拶メッセージが自動で送られるようになります。<strong>やることはコピペと選択だけです。</strong></p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/b0189f0d8eea44e6a0bd1e6de8233924" title="実演動画: エルメッセージに設定する" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: エルメッセージに設定する</figcaption>
+        </figure>
+        <h3>1. テンプレートを作る</h3>
+        <p>エルメッセージの左メニューから<strong>「テンプレート」→「新規作成」</strong>をクリック。管理名に「登録直後メッセージ」と入力して<strong>「テンプレート作成」</strong>→<strong>「メッセージ追加」</strong>をクリックします。</p>
+        <p>テキスト入力欄が出るので、STEP5で作った挨拶メッセージを<strong>コピーして貼り付け</strong>、<strong>「保存」→「一覧に戻る」</strong>。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <h3>2. 挨拶メッセージに設定する</h3>
+        <p>左メニューの<strong>「あいさつメッセージ」→「新規友だち用」</strong>を開き、下にある<strong>「アクション追加・編集」</strong>（青いボタン）をクリック。左の一覧から<strong>「テンプレート」</strong>を選び、さっき作った「登録直後メッセージ」を選択して<strong>「保存」</strong>します。</p>
+        <div class="callout info"><p>📷 この手順のスクリーンショットは準備中です（追って追加します）</p></div>
+        <p>あいさつメッセージの設定画面に、テンプレート名が表示されていれば成功です。</p>
+        <div class="callout warn">
+          <p><strong>テンプレートを作っただけでは、何も送られません。</strong>合宿でいちばん多かった止まり方です。「あいさつメッセージへの設定」までがワンセットです。</p>
+        </div>
+        <div class="callout info">
+          <p>いま設定した「友だち追加されたら、このテンプレートを送る」のような仕組みを、エルメッセージでは<strong>アクション</strong>と呼びます。エルメの機能はほぼ全部「◯◯したら△△する」というアクションの組み合わせです。この考え方は発展編でくわしく使います。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== STEP7 ===== -->
+      <section id="step7" class="block">
+        <h2>STEP 7　テスト登録して、特典が届くのを確認する（ゴール）</h2>
+        <p>最後に、自分で登録してみて、ちゃんと動くかを確かめます。</p>
+        <h3>1. 自分のスマホで友だち追加する</h3>
+        <p>LINE公式アカウントの管理画面から友だち追加用のQRコードを表示して、自分のスマホで読み取り、友だち追加します。</p>
+        <h3>2. 届いたかを確認する</h3>
+        <p>追加した直後に、STEP5で作った挨拶メッセージが届いていたら——<strong>完成です。</strong></p>
+        <h3>3. 特典ファイルの置き場所（まだ用意していない方へ）</h3>
+        <p>特典がPDFやスライドの場合は、Googleドライブに置いて共有リンクを発行し、そのURLを挨拶メッセージの受け取りリンクに差し込めばOKです。</p>
+        <div class="callout info">
+          <p>🎉 <strong>ここまでできていれば素晴らしいです。</strong>今の発信に加えて、見込み客をLINEに貯めておける状態になりました。まずは各SNSのプロフィールや動画の概要欄に、登録リンクを貼るところから始めてください。友だちが1人増えるたびに、あなたの資産が増えていきます。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== ＋α バナー ===== -->
+      <section id="banner" class="block">
+        <h2>＋α　特典バナーで受け取り率を上げる（余裕がある方向け）</h2>
+        <p>挨拶メッセージに<strong>バナー画像</strong>を添えると、見た目がぐっと良くなり、特典を受け取ってもらえる率が上がります。文章だけより、画像の方が圧倒的にタップされます。</p>
+        <p>作り方はシンプルです。Claude Codeにバナー用のテキストを作ってもらい、ChatGPTの画像生成でバナーにして、エルメッセージのテンプレートに画像として追加するだけ。詳しいやり方は下の実演動画で解説します。</p>
+        <figure class="video-embed">
+          <div class="video-frame"><iframe src="https://www.loom.com/embed/aefd8f5f2e1441c3bf7290ca74a8584b" title="実演動画: バナーを作って設定する" allowfullscreen loading="lazy"></iframe></div>
+          <figcaption>🎬 実演動画: バナーを作って設定する</figcaption>
+        </figure>
+        <div class="callout warn">
+          <p><strong>画像は「タップ時のアクション」を必ず設定してください。</strong>設定しないと、押しても何も起きないただの画像になります（画像を追加するとき「URLを開く」のアクションを付けます）。</p>
+        </div>
+        <p class="help-line">つまずいたら: いまの画面のスクショと、見ているページのURLをAIに送って聞く（ページ上部「大原則」の聞き方例）</p>
+      </section>
+
+      <!-- ===== 発展編へ ===== -->
+      <section id="next" class="block closing">
+        <h2>🚀 次のステップへ（レベル別）</h2>
+        <p>あなたの状況に合わせて、次に進む場所が変わります。</p>
+        <ul class="menu">
+          <li><strong>まだ商品がない方</strong> → 基礎編はここまででOKです。特典配布で友だちを集めながら、発信に集中してください。売るものは後から考えられます</li>
+          <li><strong>商品・鑑定サービスなどがある方／これから設計したい方</strong> → 発展編に進んでください。アフィリエイト商品・自分の商品・占いやカウンセリングなどのサービスにつなげる導線を、またステップ1から解説します</li>
+        </ul>
+        <p>発展編で扱う内容:</p>
+        <ul class="menu">
+          <li>【中級】ステップ配信・タグ管理 ／【上級】流入経路の計測・リッチメニュー</li>
+          <li>【収益化】複数シナリオの分岐 → 個別相談の予約カレンダーまで（大きく成果を出すならここまで）</li>
+          <li>【改善】クロス分析</li>
+          <li>【番外編】診断コンテンツをエルメッセージで作る</li>
+        </ul>
+        <figure class="shot"><img src="images/04-funnel-kouzou.png" alt="セールスファネルの構成: LINE1動画誘導シナリオとLINE2個別相談誘導シナリオ" /><figcaption>発展編で作る全体像。基礎編で作った「特典配布」の先に、動画誘導 → 個別相談の流れをつなげていきます</figcaption></figure>
+        <div class="closing-cta">
+          <a class="btn-link" href="advanced.html">🚀 発展編マニュアルへ進む</a>
+        </div>
+        <p class="closing-line">導線さえできていれば、売るものは後から決められる。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>公式LINE 実践マニュアル（基礎編）｜RISE夏合宿アーカイブ</p>
+      <p class="muted">RISE事務局</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
